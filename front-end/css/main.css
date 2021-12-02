@@ -1,0 +1,363 @@
+.main{
+  position: absolute;
+  width: 100%;
+}
+
+canvas {
+  position: fixed;
+}
+
+/* The navigation bar */
+.navbar {
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+}
+
+.navbar li {
+  display: inline;
+  float: left;
+  border-left: 2px dotted black;
+}
+
+.navbar li:first-child {
+  border-left: 2px solid rgba(0,0,0,0);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.navbar li:last-child {
+  border-right: 2px solid rgba(0,0,0,0);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Change background on mouse-over */
+.navbar li:hover {
+  background-color: #ddd;
+}
+
+#add #addNav, #alter #alterNav, #reports #reportsNav, #rules #rulesNav {
+  background-color: grey;
+}
+
+/* Links inside the navbar */
+.navbar li a {
+  display: block;
+  color: rgb(0, 0, 160);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.name {
+  font-size: 4em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5vh 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0 ;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: .75em 0;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.17em; margin: .83em 0
+}
+
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            {
+  margin: 1.12em 0
+}
+
+h5 {
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+
+h6 {
+  font-size: .75em;
+  margin: 1.67em 0;
+}
+
+section {
+  clear: both;
+  padding-bottom: 2vh;
+}
+
+body {
+  background-color: rgb(255,255,255);
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+}
+
+form {
+  font-weight:400;
+}
+
+input {
+  padding: 4px;
+  width: 200px;
+  margin: 3px;
+  font-weight: 700;
+}
+
+select {
+  font-weight: 700;
+  padding: 3px 0px 2px 0px;
+}
+
+select:focus {
+  padding: 5px;
+  padding-right: 8px;
+  border: 2px solid  rgb(0, 0, 160);
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: rgb(0, 0, 160);
+  margin: 0px;
+  padding: 7px;
+  border: 3px solid  rgb(0, 0, 160);
+  border-radius: 4px;
+}
+
+.submit-wrapper {
+  width:50%;
+  margin: 15px auto 0px auto;
+  text-align: center;
+}
+
+.date {
+  width: 120px;
+}
+
+.currency {
+  width: 30px
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#showMoreButton {
+  margin-top: 5px;
+}
+
+button, input[type=submit] {
+  background: rgba(0, 0, 160, 0.65);
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border-color: rgb(0, 0, 160);
+  cursor: pointer;
+}
+
+input[type=submit] {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.centreColumn {
+  margin-left: 10vw;
+  width: 80vw;
+  height: 100vh;
+  padding-top: 3vh;
+}
+
+.white {
+  background-color: #ddd;
+}
+
+.greyBackground {
+    border-radius: 25px;
+    background: #ddd;
+}
+
+.blueBorder {
+  border-radius: 10px;
+  border:solid rgba(0, 0, 160, 0.75) 2px;
+  -moz-border-radius:10px;
+}
+
+/* Style the element that is used to open and close the collapsible content */
+.collapsibleBackground {
+  border-radius: 25px;
+  background-color: #ddd;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.collapsible {
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+}
+
+.collapsible h2 {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.plus {
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+/* Table styling*/
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  border:solid rgba(0, 0, 160, 0.75) 2px;
+  -moz-border-radius:10px;
+}
+
+thead tr {
+  border-collapse: collapse;
+  background-color: rgb(120, 120, 200);
+}
+
+th {
+  padding: 5px 0px 5px 0px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+tbody tr:nth-child(even) {
+  background: #ddd;
+}
+
+tbody tr:hover {
+  color: rgb(0, 0, 255);
+}
+
+td::before {
+  display: none;
+}
+
+#transTable {
+  cursor: pointer;
+}
+
+/* Making the add from dynamic*/
+@media screen and (min-width: 800px) {
+  .tradeForm {
+    display: grid;
+    grid-gap: 20px;
+  }
+}
+
+.tradeForm {
+  justify-items: center;
+  justify-content: center;
+}
+
+
+/* Styling forms */
+form label {
+  display: block;
+}
+
+form p {
+  margin: 0;
+  width: 80%;
+}
+
+.reportForm p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tradeForm input:not([type=submit]) {
+  width: auto;
+}
+
+/*Makes an element take up the full width*/
+.full-width {
+  grid-column: 1 / 3;
+}
+
+.reportForm {
+  margin: 5% 10%;
+}
+
+/*Makes the alter table dynamic*/
+@media screen and (max-width: 1170px) {
+table {
+   border: 0;
+ }
+
+ thead {
+   position: absolute;
+   opacity: 0;
+ }
+
+ tbody {
+   display: block;
+   min-width: 19em;
+ }
+
+ tr {
+   border: 2px solid rgb(0, 0, 160);
+   border-radius: 10px;
+   display: block;
+   margin-bottom: 1em;
+ }
+
+ td {
+   border-bottom: 1px solid rgba(0, 0, 160, 0.75);
+   display: flex;
+   padding-left: 5%;
+   padding-right: 5%;
+ }
+
+ td::before {
+   display: inline-block;
+   font-weight: bold;
+   margin-right: auto;
+   padding-right: 1em;
+ }
+
+ td:last-child {
+   border-bottom: 0;
+ }
+}
